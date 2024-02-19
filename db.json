@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "password123",
+      "appointments": [1, 2]
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "email": "user2@example.com",
+      "password": "password456",
+      "appointments": [3]
+    }
+  ],
+  "therapists": [
+    {
+      "id": 1,
+      "name": "Dr. John Doe",
+      "specialty": "Psychologist",
+      "availability": "Mon-Fri, 9am-5pm",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "userId": 1,
+          "rating": 5,
+          "comment": "Great therapist!"
+        },
+        {
+          "userId": 2,
+          "rating": 4,
+          "comment": "Helped me a lot."
+        }
+      ],
+      "appointments": [1]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Jane Smith",
+      "specialty": "Counselor",
+      "availability": "Tue, Thu, Sat, 10am-6pm",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "userId": 1,
+          "rating": 4,
+          "comment": "Friendly and understanding."
+        }
+      ],
+      "appointments": [2, 3]
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "therapistId": 1,
+      "date": "2024-02-20",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "therapistId": 2,
+      "date": "2024-02-22",
+      "time": "11:00 AM"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "therapistId": 2,
+      "date": "2024-02-25",
+      "time": "2:00 PM"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "How do I schedule an appointment?",
+      "answer": "You can schedule an appointment by selecting a therapist and choosing an available time slot."
+    },
+    {
+      "id": 2,
+      "question": "Can I cancel my appointment?",
+      "answer": "Yes, you can cancel your appointment by contacting the therapist directly or through our platform."
+    }
+  ]
+}
