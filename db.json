@@ -20,7 +20,20 @@
       "id": 1,
       "name": "Dr. John Doe",
       "specialty": "Psychologist",
-      "availability": "Mon-Fri, 9am-5pm",
+      "availability": {
+        "Mon": {
+          "from": "10am",
+          "to": "6pm"
+        },
+        "Wed": {
+          "from": "10am",
+          "to": "6pm"
+        },
+        "Fri": {
+          "from": "10am",
+          "to": "6pm"
+        }
+      },
       "rating": 4.8,
       "reviews": [
         {
@@ -40,7 +53,16 @@
       "id": 2,
       "name": "Dr. Jane Smith",
       "specialty": "Counselor",
-      "availability": "Tue, Thu, Sat, 10am-6pm",
+      "availability": {
+        "Tue": {
+          "from": "9am",
+          "to": "5pm"
+        },
+        "Thu": {
+          "from": "9am",
+          "to": "5pm"
+        }
+      },
       "rating": 4.5,
       "reviews": [
         {
