@@ -1,7 +1,11 @@
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+
 function App() {
   return (
-    <div>
-      <h1>My React App!</h1>
+    <div className="App">
+      <Header />
+      <Footer />
     </div>
   );
 }
