@@ -5,7 +5,7 @@ export default function Header() {
   return (
     // TODO: Replace hrefs with routing Links
     // TODO: If user is not logged in, show login and register buttons
-    <header className="p-3 mb-3 border-bottom bg-success bg-opacity-75">
+    <header className="fixed-top p-3 mb-3 border-bottom bg-success bg-opacity-75">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a
