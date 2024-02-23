@@ -2,17 +2,24 @@
   "users": [
     {
       "id": 1,
+      "name": "John Snow",
       "username": "user1",
       "email": "user1@example.com",
       "password": "password123",
-      "appointments": [1, 2]
+      "appointments": [
+        1,
+        2
+      ]
     },
     {
       "id": 2,
+      "name": "Jane Doe",
       "username": "user2",
       "email": "user2@example.com",
       "password": "password456",
-      "appointments": [3]
+      "appointments": [
+        3
+      ]
     }
   ],
   "therapists": [
@@ -20,58 +27,100 @@
       "id": 1,
       "name": "Dr. John Doe",
       "specialty": "Psychologist",
-      "availability": {
-        "Mon": {
-          "from": "10am",
-          "to": "6pm"
-        },
-        "Wed": {
-          "from": "10am",
-          "to": "6pm"
-        },
-        "Fri": {
-          "from": "10am",
-          "to": "6pm"
-        }
-      },
-      "rating": 4.8,
-      "reviews": [
+      "bio": "I am a licensed psychologist with over 10 years of experience in treating various mental health conditions.",
+      "education": "PhD in Clinical Psychology, University of California, Los Angeles",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
         {
-          "userId": 1,
-          "rating": 5,
-          "comment": "Great therapist!"
+          "amount": 150,
+          "duration": 60
         },
         {
-          "userId": 2,
-          "rating": 4,
-          "comment": "Helped me a lot."
+          "amount": 75,
+          "duration": 30
         }
       ],
-      "appointments": [1]
+      "location": {
+        "city": "Cairo",
+        "district": "Maadi"
+      },
+      "availability": [
+        {
+          "day": "Mon",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Wed",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Fri",
+          "from": "9am",
+          "to": "5pm"
+        }
+      ],
+      "interests": [
+        "Depression",
+        "Anxiety",
+        "Stress"
+      ],
+      "rating": 4.975,
+      "reviewsCount": 6,
+      "appointments": [
+        1
+      ]
     },
     {
       "id": 2,
       "name": "Dr. Jane Smith",
-      "specialty": "Counselor",
-      "availability": {
-        "Tue": {
-          "from": "9am",
-          "to": "5pm"
-        },
-        "Thu": {
-          "from": "9am",
-          "to": "5pm"
-        }
-      },
-      "rating": 4.5,
-      "reviews": [
+      "specialty": "Psychiatrist",
+      "bio": "I am a board-certified psychiatrist with expertise in treating mood disorders, anxiety disorders, and psychotic disorders.",
+      "education": "MD in Psychiatry, Stanford University",
+      "experience": "Private practice, XYZ Hospital, ABC Mental Health Center",
+      "price": [
         {
-          "userId": 1,
-          "rating": 4,
-          "comment": "Friendly and understanding."
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
         }
       ],
-      "appointments": [2, 3]
+      "location": {
+        "city": "Cairo",
+        "district": "Dokki"
+      },
+      "availability": [
+        {
+          "day": "Tue",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Thu",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Sat",
+          "from": "10am",
+          "to": "6pm"
+        }
+      ],
+      "interests": [
+        "Mood Disorders",
+        "Anxiety Disorders",
+        "Psychotic Disorders"
+      ],
+      "rating": 4.75,
+      "reviewsCount": 2,
+      "appointments": [
+        2,
+        3
+      ]
     }
   ],
   "appointments": [
@@ -104,6 +153,72 @@
       "id": 2,
       "question": "Can I cancel my appointment?",
       "answer": "Yes, you can cancel your appointment by contacting the therapist directly or through our platform."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userId": 1,
+      "userName": "John Snow",
+      "therapistId": 1,
+      "rating": 5,
+      "comment": "Dr. John Doe is an excellent psychologist. He helped me overcome my depression and anxiety."
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "userName": "Jane Doe",
+      "therapistId": 2,
+      "rating": 4,
+      "comment": "Dr. Jane Smith is a caring psychiatrist. She listens to her patients and provides effective treatment."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "userName": "Jane Doe",
+      "therapistId": 1,
+      "rating": 5,
+      "comment": "Dr. John Doe is a compassionate psychologist. He helped me manage my stress and improve my mental well-being."
+    },
+    {
+      "userId": 1,
+      "userName": "John Doe",
+      "therapistId": 1,
+      "rating": "5",
+      "comment": "Hello",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "userName": "John Doe",
+      "therapistId": 1,
+      "rating": "5",
+      "comment": "fgdsgfsdhgfsag",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "userName": "John Doe",
+      "therapistId": 1,
+      "rating": "5",
+      "comment": "wegwerhgreh",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "userName": "John Doe",
+      "therapistId": 1,
+      "rating": "5",
+      "comment": "fdgsdgsfgf",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "userName": "John Doe",
+      "therapistId": 2,
+      "rating": "5",
+      "comment": "dsasfdsgfsdg",
+      "id": 8
     }
   ]
 }
