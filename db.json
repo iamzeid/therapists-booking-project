@@ -1,25 +1,54 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "John Snow",
-      "username": "user1",
-      "email": "user1@example.com",
-      "password": "password123",
-      "appointments": [
-        1,
-        2
-      ]
+      "displayName": "abdelrahman zeid",
+      "email": "iamzeid98@gmail.com",
+      "phoneNumber": null,
+      "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJeF_rFXAiB_ktScPOEpqZbNyrsp7XCIIsICFQhFJqD=s96-c",
+      "uid": "yGjGFQrfaeRswKQdl8MV3YyMTF33",
+      "token": "ya29.a0AfB_byD7rgZsQa9xqVfhtSJb6Fl15TnwWFS8562bT39EhPA8bn5Mqdvp3m5ZJP8NBzWjGkV4T2LVZtgIy3uvid1u3T--lwgrD-Y0Fc_S1lKwOz5yPceWhunnbNX560gHtpSfniGJkUXNTVZacgMnrraeWTMEunjLXAaCgYKAccSARESFQHGX2MiEvZpYqkio-vJ47EYB6FZzw0169",
+      "refreshToken": "AMf-vBy06e_TFdGM1GSpuycuywuXnqIGLKKj0qE2unatYyVsFGW5Mv3kPo_PvHoA3TQpq_heEHE39GE3cAh_C6GDQpNWP90o50OH1sgRHXGX3YhhbaLE7z18rI5owUxg_LaHBlBZHL9KMDx3GPcNwC9gqRleqQh7uLCToDEw4BrZmLoOYrm4QHx2Jxp6JJRbkiQkBb5JS4wl_yJlpbUDvcfYrZeMKuiXP7UeDdd8OW6yfYI05OMeh35ibtlC0R1xGuVmetTVIcInrsP1EH5oS-bbyDQPKnczOONGmftPe9k4KaOMKvIjGgzIqNLrzK-TQcXnKZhybZCTCbdoBmn7zoE0zSD8oIZ-shLbeg_26ZyXcUstoW1IrW-yTx7ui71lkwmTKdl0yEeW-jc4OEMIYW3pUKkPEW_lVLBg975BPAHMB8f7XsReN9tCsz-QV2tjXJ3fk8kLixALxG1qrB0ZiJp7ire08fZVdQ",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Jane Doe",
-      "username": "user2",
-      "email": "user2@example.com",
-      "password": "password456",
-      "appointments": [
-        3
-      ]
+      "displayName": "Z Empire",
+      "email": "zempire2000@gmail.com",
+      "phoneNumber": null,
+      "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocLTVjJxghG-a3PCmUy5KGCLkEfaXVVag5MeefwIlniE=s96-c",
+      "uid": "OpVinNchRYdL5pFxlxyWHYqPDbi2",
+      "token": "ya29.a0AfB_byC4uQClWKFyvoe6KsWxJw0u0lJZnJoiwsjhPPsZ3kmDOByOxgTUTfvrGipXlR71VKzdgSbmDoSSudaRvqrCwlJX5peLVJ2kZsH-p7jK_qlC-1BwQNyNE1BvEO-yGKbAWbaMGf1QtMW-mxFImuKYq74wUkERHFoaCgYKAc8SARESFQHGX2Mih1emBGZVKRf36mRAXfdV8g0170",
+      "refreshToken": "AMf-vBzXW-X3bLq-Z6fOfHrKmNicx9xMhqvam6K519V8xhS2L6vrMQfGdTkf9FNQfZu-Zc9C8DUhfd02oA7nHJK1VzrsGdFTtJH6QVjniHoJiLuAowVMp_ewD4CPfpfC6XvvgCuYCsofCsFGWA7VplJkLBHT80tQu3GT-Fhg_aP438Y7IHVVvMJcQJbBk6eaIIFoIz2VlW-wNz3nWdfiUw1OFm1q4swg0QXgdh3mW7_oSPsxX275TMRtXbubvk6vnrXyrQ79zTLLi9tdS8EyQNFHoOt9GHfzRbGdcjlXttk2l4H7pKvGLWru8uspLWjGnyJjqIvY49QiCHuxsOXm9_rufJ3O1xmdpIwUwtGub7marsoexSffASDFvQcm-ae_BBmimf2T7aTkyFTeAhso_qMbn0wLKMXbqadVCOS1Ry2BulbSfoQ2guTzsyeKw89FmL7ywM6Dmq5y",
+      "id": 2
+    },
+    {
+      "displayName": "Z Empire",
+      "email": "zempire2000@gmail.com",
+      "phoneNumber": null,
+      "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocLTVjJxghG-a3PCmUy5KGCLkEfaXVVag5MeefwIlniE=s96-c",
+      "uid": "OpVinNchRYdL5pFxlxyWHYqPDbi2",
+      "token": "ya29.a0AfB_byCWFQaLwiQQA7nMJeENDofnzLpkO9wBaup2ctQt6j1rFf8A5hJe1-t9BPQYWRwwO9pu4b93YmOfqcHvdcZdNiPN1XFy8YAMp8wklGYIIjnw-WPypaNfZwc6sfyn4Y_r6hhhM7J7EMtFfr20BS15iFjkqn0ck2IaCgYKAQsSARESFQHGX2MiTZvugfWkDtYnmAwRkDGyNQ0170",
+      "refreshToken": "AMf-vByU3ru14FOQ_R6rSVxB-VXLdaIodU9r_DvVo-uLlf97S0LYJbvp-Wg9Qko6XrcPAzfJfvtatEU__lcSQ7PBVQQZZKl9dxccvj17PdSzz4aVoeZN_gW-enH_VvCuS2OqIFVkKUaTCCnW6el1DC3uNAaE32I-dCtAvzcIpkel4OOPorhbYu8BwpCCZwCjchUKz00sLXNRb69QC7pHHfchN-favOAG53PWpNJTR_K-fTtdAHexkG5nN88xipcmUDAPew3NDmdqZj5oYt-rhu2xzwIr-DidMoXWCQOE9KrTs3DAYL2hyXQYandkmro-AVzDma3GLm6s8JVgl5EsDROgVxjwNx9v4NIWIvjwApiEZYOi3uRG3E6m5eS5U1aN6mH4SGcU_lfIpQ3CrUyDAhO2u5mYD0yRhIevqnfn7KV8ZQZKETWOjidpSCAkjw8ASdHsB0rErw_4",
+      "id": 3
+    },
+    {
+      "displayName": "Z Empire",
+      "email": "zempire2000@gmail.com",
+      "phoneNumber": null,
+      "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocLTVjJxghG-a3PCmUy5KGCLkEfaXVVag5MeefwIlniE=s96-c",
+      "uid": "OpVinNchRYdL5pFxlxyWHYqPDbi2",
+      "token": "ya29.a0AfB_byCwbncNf4L8REnTDf6eOa91zZHFbwGxgyJEzq57-O1E3lX1o8zxTmObt32GuZ627uHtP9EcEq_kdz2kjc4nQuxzi3DRrQn27Jsgx9NwZmFnbR_t0kRq0iI5JeYPJ_ee4dOUgKJee2saA39hIP1xxgYLpchuzkwaCgYKAaoSARESFQHGX2MiurHzoazV6K-wdGjiiwdRQQ0170",
+      "refreshToken": "AMf-vBwQmjU22lIGKEEtuTSVfHGsGR0Pbp_mMpuzCTureY-kP2GHjWzxiKE33facJ4Ig9BEWfi2oeij6B2GaGtukGflGLoeCPPEwTc_Z4KfCf_aBvUqwyHKOkHr0GnKpwD3eK_ebbqnNRyWQcuKxAghAAkyXUG3xiaFFcZqXtqfPNd0fSrNPDzsqQrgFISjx9prt9e2-BwR-9QQF6qmTKg3dnDUOZivB4NbSN7e5HzVR7S3daUp5D_ujut-ePug18XKfjlPIjv_81JRJynE5yqNavpslCa3niwBomwRLX4b1HJJQSn1DbfObMS5iOjCn9-3i0BQWepbECYZAAH-g-Si0778XSKmvk_OD6CW9R9fxLxTYp9uuaFdRsATGYLrBSWpVvQj6es1FlB9WOkZS0yqIgeJXAITfMe_5UAv0er9c0h87cMUHNbr7nUzPTiu-JU8jv3QZG43q",
+      "id": 4
+    },
+    {
+      "displayName": "Z Empire",
+      "email": "zempire2000@gmail.com",
+      "phoneNumber": null,
+      "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocLTVjJxghG-a3PCmUy5KGCLkEfaXVVag5MeefwIlniE=s96-c",
+      "uid": "OpVinNchRYdL5pFxlxyWHYqPDbi2",
+      "token": "ya29.a0AfB_byCY57qg433KbaJrC1oP4nPI-mxgYkvvh4Akngl-W1oteOq6W9ApW1iTKjUZgJ7GHVDKJUJOlHgwADt31M2uDz25ziZ4fSQbrcdeQqIbIzGBZxU5N80zS3S-As7kWSCBADdCZjzjFXeM2lZnc41KggQFq2Htp0UaCgYKARcSARESFQHGX2MimXsxn9-Wd9cHMzS0fVoE7g0170",
+      "refreshToken": "AMf-vBxzV4DsOwBZvYcJYLph90M8aA3xU1g4XUV10UPfMdVq-TwOiq395LqiAP7AI8auspK6HcZ46WEfRKkhz3gkdtOAAmT3mV1cRsfj6OV_pnM9U0evhl4AT53I7Ww8Ppci01t-gTI2dga9wuFVgeKazYjm3J0OANeE6BgFOGSJdpQdSedD3V4r1vGQ3MP44MzIKatO3YFpH0H4kZAXcjNNsAO8f_ot6VPtKpiAmxtjGOr3W3D55WWzwS_kTXuZfjYkFZswraAPxp243VZMbOy7niEUDNt2UEfHds7y9lXVTB8wwPlXohgJTqMK2-4EexsqVkpzMitB9mNVrYTbVWhKEwgO5d0FkNT0r4EiTbnl83DefgZZyNc0Xbc5Wji61Hozlczwh6wNIMRhXD9J8hj-KMtVX7gTLY_OgYatmXA1go6gPj4X1Enp6Fi_5IMP5LikSBe3qiP3",
+      "id": 5
     }
   ],
   "therapists": [
@@ -66,8 +95,8 @@
         "Anxiety",
         "Stress"
       ],
-      "rating": 4.975,
-      "reviewsCount": 6,
+      "rating": 4.9875,
+      "reviewsCount": 7,
       "appointments": [
         1
       ]
@@ -121,6 +150,382 @@
         2,
         3
       ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Michael Johnson",
+      "specialty": "Psychotherapist",
+      "bio": "I am a licensed psychotherapist with expertise in treating trauma, addiction, and personality disorders.",
+      "education": "PhD in Clinical Psychology, University of California, Berkeley",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "Heliopolis"
+      },
+      "availability": [
+        {
+          "day": "Mon",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Wed",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Fri",
+          "from": "9am",
+          "to": "5pm"
+        }
+      ],
+      "interests": [
+        "Trauma",
+        "Addiction",
+        "Personality Disorders"
+      ],
+      "rating": 4.5,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 4,
+      "name": "Dr. Sarah Williams",
+      "specialty": "Counselor",
+      "bio": "I am a licensed counselor with expertise in treating relationship issues, family conflicts, and career challenges.",
+      "education": "MA in Counseling Psychology, New York University",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "Nasr City"
+      },
+      "availability": [
+        {
+          "day": "Tue",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Thu",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Sat",
+          "from": "10am",
+          "to": "6pm"
+        }
+      ],
+      "interests": [
+        "Relationship Issues",
+        "Family Conflicts",
+        "Career Challenges"
+      ],
+      "rating": 4.25,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 5,
+      "name": "Dr. David Brown",
+      "specialty": "Social Worker",
+      "bio": "I am a licensed social worker with expertise in providing support to individuals and families in need.",
+      "education": "MSW in Social Work, University of Michigan",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "Mohandessin"
+      },
+      "availability": [
+        {
+          "day": "Mon",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Wed",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Fri",
+          "from": "9am",
+          "to": "5pm"
+        }
+      ],
+      "interests": [
+        "Support",
+        "Advocacy",
+        "Crisis Intervention"
+      ],
+      "rating": 4.0,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 6,
+      "name": "Dr. Laura Garcia",
+      "specialty": "Marriage Therapist",
+      "bio": "I am a licensed marriage and family therapist with expertise in treating couples and families facing relationship issues and life transitions.",
+      "education": "MA in Marriage and Family Therapy, University of Southern California",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "Zamalek"
+      },
+      "availability": [
+        {
+          "day": "Tue",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Thu",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Sat",
+          "from": "10am",
+          "to": "6pm"
+        }
+      ],
+      "interests": [
+        "Relationship Issues",
+        "Life Transitions",
+        "Couples Therapy"
+      ],
+      "rating": 3.75,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 7,
+      "name": "Dr. Robert Martinez",
+      "specialty": "Addiction Counselor",
+      "bio": "I am a licensed addiction counselor with expertise in treating substance abuse and behavioral addictions.",
+      "education": "MS in Addiction Counseling, University of Nevada, Las Vegas",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "New Cairo"
+      },
+      "availability": [
+        {
+          "day": "Mon",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Wed",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Fri",
+          "from": "9am",
+          "to": "5pm"
+        }
+      ],
+      "interests": [
+        "Substance Abuse",
+        "Behavioral Addictions",
+        "Recovery"
+      ],
+      "rating": 3.5,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 8,
+      "name": "Dr. Maria Rodriguez",
+      "specialty": "Art Therapist",
+      "bio": "I am a licensed art therapist with expertise in using art as a form of therapy to help individuals express themselves and improve their mental well-being.",
+      "education": "MA in Art Therapy, School of the Art Institute of Chicago",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "6th of October City"
+      },
+      "availability": [
+        {
+          "day": "Tue",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Thu",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Sat",
+          "from": "10am",
+          "to": "6pm"
+        }
+      ],
+      "interests": [
+        "Art Therapy",
+        "Expressive Arts",
+        "Creative Process"
+      ],
+      "rating": 3.25,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 9,
+      "name": "Dr. Daniel Lee",
+      "specialty": "Rehabilitation Counselor",
+      "bio": "I am a licensed rehabilitation counselor with expertise in helping individuals with disabilities live independently and find employment.",
+      "education": "MS in Rehabilitation Counseling, San Diego State University",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "Shubra"
+      },
+      "availability": [
+        {
+          "day": "Mon",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Wed",
+          "from": "9am",
+          "to": "5pm"
+        },
+        {
+          "day": "Fri",
+          "from": "9am",
+          "to": "5pm"
+        }
+      ],
+      "interests": [
+        "Disabilities",
+        "Independent Living",
+        "Employment"
+      ],
+      "rating": 3.0,
+      "reviewsCount": 1,
+      "appointments": []
+    },
+    {
+      "id": 10,
+      "name": "Dr. Jennifer Brown",
+      "specialty": "Geriatric Counselor",
+      "bio": "I am a licensed geriatric counselor with expertise in providing support to older adults and their families.",
+      "education": "MS in Gerontology, University of Southern California",
+      "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
+      "price": [
+        {
+          "amount": 150,
+          "duration": 60
+        },
+        {
+          "amount": 75,
+          "duration": 30
+        }
+      ],
+      "location": {
+        "city": "Cairo",
+        "district": "Heliopolis"
+      },
+      "availability": [
+        {
+          "day": "Tue",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Thu",
+          "from": "10am",
+          "to": "6pm"
+        },
+        {
+          "day": "Sat",
+          "from": "10am",
+          "to": "6pm"
+        }
+      ],
+      "interests": [
+        "Aging",
+        "Caregiving",
+        "End-of-Life Planning"
+      ],
+      "rating": 2.75,
+      "reviewsCount": 1,
+      "appointments": []
     }
   ],
   "appointments": [
@@ -219,6 +624,14 @@
       "rating": "5",
       "comment": "dsasfdsgfsdg",
       "id": 8
+    },
+    {
+      "userId": null,
+      "userName": "Z Empire",
+      "therapistId": 1,
+      "rating": "5",
+      "comment": "sdgbfbdcvczxc",
+      "id": 9
     }
   ]
 }

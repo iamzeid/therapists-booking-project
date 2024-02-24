@@ -127,14 +127,14 @@ const Rating = ({ info }) => {
   const handleSubmit = () => {
     if (selectedValue && reviewText) {
       const newReview = {
-        userId: info.userId,
-        userName: info.userName,
+        userId: localStorage.getItem("id"),
+        userName: localStorage.getItem("displayName"),
         therapistId: info.id,
         rating: selectedValue,
         comment: reviewText,
       };
 
-      fetch("http://localhost:3000/reviews", {
+      fetch("http://localhost:5000/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -142,7 +142,7 @@ const Rating = ({ info }) => {
         body: JSON.stringify(newReview),
       });
 
-      fetch(`http://localhost:3000/therapists/${info.id}`, {
+      fetch(`http://localhost:5000/therapists/${info.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -205,11 +205,11 @@ const TherapistProfile = ({ id }) => {
 
   // 2 api calls to get the therapist and the reviews
   useEffect(() => {
-    fetch(`http://localhost:3000/therapists/${id}`)
+    fetch(`http://localhost:5000/therapists/${id}`)
       .then((response) => response.json())
       .then((data) => setTherapist(data));
 
-    fetch(`http://localhost:3000/reviews`)
+    fetch(`http://localhost:5000/reviews`)
       .then((response) => response.json())
       .then((data) => {
         const filteredReviews = data.filter(
@@ -279,4 +279,4 @@ const TherapistProfile = ({ id }) => {
   );
 };
 
-export default TherapistProfile;
+export { TherapistProfile, Stars };

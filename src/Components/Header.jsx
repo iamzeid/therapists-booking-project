@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Hospital } from "react-bootstrap-icons";
 
 export default function Header() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/users?email=" + localStorage.getItem("email"))
+      .then((response) => response.json())
+      .then((data) => {
+        setUser(data[0]);
+      });
+  }, []);
+
   return (
     // TODO: Replace hrefs with routing Links
     // TODO: If user is not logged in, show login and register buttons
@@ -15,29 +25,30 @@ export default function Header() {
             <Hospital className="me-2" size={32} />
           </a>
 
-            <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li>
-                <a href="#" className="nav-link px-2 link-light">
-                  Overview
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link px-2 link-light">
-                  Inventory
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link px-2 link-light">
-                  Customers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link px-2 link-light">
-                  Products
-                </a>
-              </li>
-            </ul>
+          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <a href="#" className="nav-link px-2 link-light">
+                Overview
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link px-2 link-light">
+                Inventory
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link px-2 link-light">
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link px-2 link-light">
+                Products
+              </a>
+            </li>
+          </ul>
 
+          {user ? (
             <div className="dropdown text-end">
               <a
                 href="#"
@@ -46,7 +57,7 @@ export default function Header() {
                 aria-expanded="false"
               >
                 <img
-                  src="https://placehold.co/300/green/white?text=A"
+                  src={user.photoURL}
                   alt="avatar"
                   width="32"
                   height="32"
@@ -79,6 +90,9 @@ export default function Header() {
                 </li>
               </ul>
             </div>
+          ) : (
+            <button className="btn btn-light">Login / Signin</button>
+          )}
         </div>
       </div>
     </header>

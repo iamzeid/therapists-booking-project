@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { auth, provider } from "./config";
 import { signInWithPopup, signOut } from "firebase/auth";
+import * as Icon from "react-bootstrap-icons";
 
 function Login() {
   const [value, setValue] = useState(null);
@@ -25,25 +26,27 @@ function Login() {
     <>
       {value ? (
         <div>
-          <button onClick={handleSignOut}>Sign Out</button>
+          <h2>Welcome {value}</h2>
+          <p>You are now signed in!</p>
+
+          <h3>Do you want to sign out?</h3>
+          <button className="btn btn-danger" onClick={handleSignOut}>
+            <Icon.BoxArrowRight /> Sign Out
+          </button>
+          <button
+            className="btn btn-primary"
+            onClick={() => (window.location.href = "/")}
+          >
+            <Icon.ArrowLeft /> Go Back
+          </button>
         </div>
       ) : (
-        <div>
-          <h2>Sign In To Your Account</h2>
-          <button onClick={handleClick}>Sign In With Google</button>
-          <form>
-            <label htmlFor="email">Email: </label>
-            <input type="text" id="email" name="email" />
-            <br />
-            <label htmlFor="password">Password: </label>
-            <input type="password" id="password" name="password" />
-            <br />
-            <button type="submit">Login</button>
-          </form>
-          <a href="#">Forgot Password?</a>
-          <br />
-          Don't have an account? <a href="/register">Register Now!</a>
-        </div>
+        <button
+          className="btn btn-primary mt-2 mb-2 w-100"
+          onClick={handleClick}
+        >
+          <Icon.Google /> Sign In With Google
+        </button>
       )}
     </>
   );
