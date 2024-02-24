@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
+  
   return (
     // Landing page
     <div className="container">
@@ -23,8 +25,11 @@ export default function Home() {
           </p>
 
           <div className="text-center">
-            <button className="btn btn-primary">Find a Therapist</button>
+            <Link to="/search" className="btn btn-primary">
+              Search
+            </Link>
           </div>
+          
         </div>
       </div>
     </div>

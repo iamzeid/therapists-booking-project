@@ -1,9 +1,48 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from 'react';
+import { Elements, useStripe } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 
-const DateTimePicker = ({ availability }) => {
+const stripePromise = loadStripe('pk_test_51Om0ZiBPXRYAP6UnkFREwdkub6ktho8pkLyFv1EZNBZ4u6EfoBMtO6gcA8IN34iTFMtbgMje2NsY3Xb2RgKg7e1d002uH8ouJy');
+
+const DateTimePicker = ({ availability, userId, therapistId }) => {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
   const [error, setError] = useState("");
+
+  const stripe = useStripe();
+  const [sessionId, setSessionId] = useState(null);
+
+  const handleBookNow = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          therapistId,
+          userId
+        }),
+      });
+
+      const session = await response.json();
+      setSessionId(session.id);
+    } catch (error) {
+      console.error('Error:', error.message);
+    }
+  };
+
+  useEffect(() => {
+    if (sessionId) {
+      stripe.redirectToCheckout({
+        sessionId: sessionId,
+      }).then(result => {
+        if (result.error) {
+          console.error(result.error.message);
+        }
+      });
+    }
+  }, [sessionId, stripe]);
 
   const handleDateChange = (e) => {
     setSelectedDate(e.target.value);
@@ -18,8 +57,9 @@ const DateTimePicker = ({ availability }) => {
     // Validate selected date and time
     const isValid = isValidDateTime(selectedDate, selectedTime);
     if (isValid) {
-      console.log("Date and time are valid:", selectedDate, selectedTime);
-      // Add your logic here for handling the valid date and time
+      setError("");
+      // Book appointment
+      handleBookNow();
     } else {
       setError("Invalid date or time");
     }
@@ -88,4 +128,10 @@ const DateTimePicker = ({ availability }) => {
   );
 };
 
-export default DateTimePicker;
+const DateTimePickerWithStripe = (props) => (
+  <Elements stripe={stripePromise}>
+    <DateTimePicker {...props} />
+  </Elements>
+);
+
+export default DateTimePickerWithStripe;
