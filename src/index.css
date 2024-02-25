@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* section1 */
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 215, 191);
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: bottom left;
+}
+
+.landing .image img {
+  width: 500px;
+  animation: up-and-down 5s linear infinite;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landing .go-down {
+  transition: 0.3s;
+}
+
+.landing .go-down i {
+  animation: bouncing 1.5s infinite;
+}
+
+@keyframes up-and-down {
+
+  0%,
+  100% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+/* section2 */
+.know.why_choose {
+  background-image: url("/public/images/medical-10.jpg");
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  /* Adjust padding as needed */
+  box-sizing: border-box;
+}
+
+.content h3,
+.section2 h2,
+h1 {
+  color: rgb(52, 105, 52);
+}
+
+.content {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h2 {
+  color: rgb(52, 105, 52) !important;
+
+}
+
+/* section4 */
+
+.accordion-item {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.accordion-button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  border: 1px solid #DCF1FF;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* section5 */
+
+.contact {
+  background-color: rgb(182, 215, 191);
+}
+
+.c_form {
+  border-radius: 10px;
+  background-color: rgb(70, 118, 70);
+}

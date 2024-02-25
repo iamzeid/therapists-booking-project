@@ -159,8 +159,10 @@ const TherapistSearch = () => {
             <div className="col-md-4 mb-3 card-group" key={therapist.id}>
               <div className="card">
                 <img
-                  src={"https://placehold.co/150/orange/white?text=" +
-                  therapist.name[4]}
+                  src={
+                    "https://placehold.co/150/orange/white?text=" +
+                    therapist.name[4]
+                  }
                   className="card-img-top img-fluid rounded-circle mt-3 mx-auto w-50"
                   alt={therapist.name}
                 />
@@ -188,14 +190,9 @@ const TherapistSearch = () => {
                     {therapist.location.city}, {therapist.location.district}
                   </p>
                   <p className="card-text">
-                    {therapist.price.map((option) => (
-                      <span
-                        key={option.amount}
-                        className="badge bg-warning m-1"
-                      >
-                        {option.amount} EGP
-                      </span>
-                    ))}
+                    <span className="badge bg-warning m-1">
+                      {therapist.price} EGP
+                    </span>
                   </p>
                 </div>
                 <div className="card-footer">

@@ -59,16 +59,7 @@
       "bio": "I am a licensed psychologist with over 10 years of experience in treating various mental health conditions.",
       "education": "PhD in Clinical Psychology, University of California, Los Angeles",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Maadi"
@@ -95,8 +86,8 @@
         "Anxiety",
         "Stress"
       ],
-      "rating": 4.9875,
-      "reviewsCount": 7,
+      "rating": 4.99375,
+      "reviewsCount": 8,
       "appointments": [
         1
       ]
@@ -108,16 +99,7 @@
       "bio": "I am a board-certified psychiatrist with expertise in treating mood disorders, anxiety disorders, and psychotic disorders.",
       "education": "MD in Psychiatry, Stanford University",
       "experience": "Private practice, XYZ Hospital, ABC Mental Health Center",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Dokki"
@@ -158,16 +140,7 @@
       "bio": "I am a licensed psychotherapist with expertise in treating trauma, addiction, and personality disorders.",
       "education": "PhD in Clinical Psychology, University of California, Berkeley",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Heliopolis"
@@ -205,16 +178,7 @@
       "bio": "I am a licensed counselor with expertise in treating relationship issues, family conflicts, and career challenges.",
       "education": "MA in Counseling Psychology, New York University",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Nasr City"
@@ -252,16 +216,7 @@
       "bio": "I am a licensed social worker with expertise in providing support to individuals and families in need.",
       "education": "MSW in Social Work, University of Michigan",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Mohandessin"
@@ -288,7 +243,7 @@
         "Advocacy",
         "Crisis Intervention"
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewsCount": 1,
       "appointments": []
     },
@@ -299,16 +254,7 @@
       "bio": "I am a licensed marriage and family therapist with expertise in treating couples and families facing relationship issues and life transitions.",
       "education": "MA in Marriage and Family Therapy, University of Southern California",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Zamalek"
@@ -346,16 +292,7 @@
       "bio": "I am a licensed addiction counselor with expertise in treating substance abuse and behavioral addictions.",
       "education": "MS in Addiction Counseling, University of Nevada, Las Vegas",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "New Cairo"
@@ -393,16 +330,7 @@
       "bio": "I am a licensed art therapist with expertise in using art as a form of therapy to help individuals express themselves and improve their mental well-being.",
       "education": "MA in Art Therapy, School of the Art Institute of Chicago",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "6th of October City"
@@ -440,16 +368,7 @@
       "bio": "I am a licensed rehabilitation counselor with expertise in helping individuals with disabilities live independently and find employment.",
       "education": "MS in Rehabilitation Counseling, San Diego State University",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Shubra"
@@ -476,7 +395,7 @@
         "Independent Living",
         "Employment"
       ],
-      "rating": 3.0,
+      "rating": 3,
       "reviewsCount": 1,
       "appointments": []
     },
@@ -487,16 +406,7 @@
       "bio": "I am a licensed geriatric counselor with expertise in providing support to older adults and their families.",
       "education": "MS in Gerontology, University of Southern California",
       "experience": "Private practice, ABC Therapy Center, XYZ Hospital",
-      "price": [
-        {
-          "amount": 150,
-          "duration": 60
-        },
-        {
-          "amount": 75,
-          "duration": 30
-        }
-      ],
+      "price": 200,
       "location": {
         "city": "Cairo",
         "district": "Heliopolis"
@@ -564,74 +474,46 @@
     {
       "id": 1,
       "userId": 1,
-      "userName": "John Snow",
       "therapistId": 1,
       "rating": 5,
       "comment": "Dr. John Doe is an excellent psychologist. He helped me overcome my depression and anxiety."
     },
     {
       "id": 2,
-      "userId": 2,
-      "userName": "Jane Doe",
+      "userId": 1,
       "therapistId": 2,
       "rating": 4,
-      "comment": "Dr. Jane Smith is a caring psychiatrist. She listens to her patients and provides effective treatment."
+      "comment": "Dr. Jane Smith is a knowledgeable psychiatrist. She provided me with valuable insights into my mental health."
     },
     {
       "id": 3,
       "userId": 2,
-      "userName": "Jane Doe",
-      "therapistId": 1,
+      "therapistId": 2,
       "rating": 5,
-      "comment": "Dr. John Doe is a compassionate psychologist. He helped me manage my stress and improve my mental well-being."
+      "comment": "Dr. Jane Smith is a compassionate psychiatrist. She listened to my concerns and offered practical solutions."
     },
     {
-      "userId": 1,
-      "userName": "John Doe",
-      "therapistId": 1,
-      "rating": "5",
-      "comment": "Hello",
-      "id": 4
+      "id": 4,
+      "userId": 2,
+      "therapistId": 3,
+      "rating": 4,
+      "comment": "Dr. Michael Johnson is a caring psychotherapist. He helped me process my trauma and addiction."
     },
     {
-      "userId": 1,
-      "userName": "John Doe",
+      "userId": "yGjGFQrfaeRswKQdl8MV3YyMTF33",
+      "userName": "abdelrahman zeid",
       "therapistId": 1,
       "rating": "5",
-      "comment": "fgdsgfsdhgfsag",
+      "comment": "zdghjfgkjghkhjk",
       "id": 5
     },
     {
-      "userId": 1,
-      "userName": "John Doe",
+      "userId": "yGjGFQrfaeRswKQdl8MV3YyMTF33",
+      "userName": "abdelrahman zeid",
       "therapistId": 1,
       "rating": "5",
-      "comment": "wegwerhgreh",
+      "comment": "zdghjfgkjghkhjk",
       "id": 6
-    },
-    {
-      "userId": 1,
-      "userName": "John Doe",
-      "therapistId": 1,
-      "rating": "5",
-      "comment": "fdgsdgsfgf",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "userName": "John Doe",
-      "therapistId": 2,
-      "rating": "5",
-      "comment": "dsasfdsgfsdg",
-      "id": 8
-    },
-    {
-      "userId": null,
-      "userName": "Z Empire",
-      "therapistId": 1,
-      "rating": "5",
-      "comment": "sdgbfbdcvczxc",
-      "id": 9
     }
   ]
 }

@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from "react";
 import * as Icon from "react-bootstrap-icons";
-import DateTimePicker from "./DateTimePicker";
+import { useParams } from "react-router-dom";
+
+import DateTimePickerWithStripe from "../Components/DateTimePicker";
+
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+
+import { auth } from "./config";
+
+import { Link } from "react-router-dom";
+
+const stripePromise = loadStripe(
+  "pk_test_51Om0ZiBPXRYAP6UnkFREwdkub6ktho8pkLyFv1EZNBZ4u6EfoBMtO6gcA8IN34iTFMtbgMje2NsY3Xb2RgKg7e1d002uH8ouJy"
+);
 
 const Stars = ({ rating }) => {
   const [whole, part] = [Math.floor(rating), rating % 1];
@@ -69,12 +82,7 @@ const Info = ({ info }) => {
           <Icon.CashStack /> Price:
         </h6>
         <p>
-          {info.price?.map((price, index) => (
-            <span key={index}>
-              {price.amount} EGP for {price.duration} minutes session
-              <br />
-            </span>
-          ))}
+          <span className="badge bg-warning m-1">{info.price} EGP</span>
         </p>
         <h6>
           <Icon.HeartFill /> Interests:
@@ -127,8 +135,8 @@ const Rating = ({ info }) => {
   const handleSubmit = () => {
     if (selectedValue && reviewText) {
       const newReview = {
-        userId: localStorage.getItem("id"),
-        userName: localStorage.getItem("displayName"),
+        userId: auth.currentUser.uid,
+        userName: auth.currentUser.displayName,
         therapistId: info.id,
         rating: selectedValue,
         comment: reviewText,
@@ -199,9 +207,11 @@ const Rating = ({ info }) => {
   );
 };
 
-const TherapistProfile = ({ id }) => {
+const TherapistProfile = () => {
   const [therapist, setTherapist] = useState({});
   const [reviews, setReviews] = useState([]);
+
+  const { id } = useParams();
 
   // 2 api calls to get the therapist and the reviews
   useEffect(() => {
@@ -254,7 +264,29 @@ const TherapistProfile = ({ id }) => {
             }}
           />
 
-          <DateTimePicker availability={therapist.availability} />
+          {/* {auth.currentUser ? (
+            <Elements stripe={stripePromise}>
+              <DateTimePickerWithStripe
+                availability={therapist.availability}
+                userId={id}
+                therapistId={therapist.id}
+              />
+            </Elements>
+          ) : (
+            <p className="text-center">
+              <Link className="btn btn-success w-100" to="/login">
+                Login to book an appointment
+              </Link>
+            </p>
+          )} */}
+
+          <Elements stripe={stripePromise}>
+            <DateTimePickerWithStripe
+              availability={therapist.availability}
+              userId={id}
+              therapistId={therapist.id}
+            />
+          </Elements>
 
           <Reviews
             info={{
@@ -262,17 +294,26 @@ const TherapistProfile = ({ id }) => {
               reviews: reviews,
             }}
           />
-          <Rating
-            info={{
-              userId: 1,
-              userName: "John Doe",
-              id: therapist.id,
-              name: therapist.name,
-              rating: therapist.rating,
-              comment: therapist.comment,
-              reviewsCount: therapist.reviewsCount,
-            }}
-          />
+
+          {auth.currentUser ? (
+            <Rating
+              info={{
+                userId: 1,
+                userName: "John Doe",
+                id: therapist.id,
+                name: therapist.name,
+                rating: therapist.rating,
+                comment: therapist.comment,
+                reviewsCount: therapist.reviewsCount,
+              }}
+            />
+          ) : (
+            <p className="text-center">
+              <Link className="btn btn-success w-100" to="/login">
+                Login to rate {therapist.name}
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </div>

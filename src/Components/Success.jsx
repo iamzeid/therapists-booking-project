@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { CheckCircleFill } from "react-bootstrap-icons";
+
 const Success = () => {
   const navigate = useNavigate();
 
@@ -12,11 +13,8 @@ const Success = () => {
     return () => clearTimeout(redirectTimeout);
   }, [navigate]);
 
-  
-
-
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 mb-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card text-center">
