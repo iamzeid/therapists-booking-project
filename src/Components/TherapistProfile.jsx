@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+
 import * as Icon from "react-bootstrap-icons";
 import { useParams } from "react-router-dom";
 
@@ -7,9 +9,7 @@ import DateTimePickerWithStripe from "../Components/DateTimePicker";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
-import { auth } from "./config";
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const stripePromise = loadStripe(
   "pk_test_51Om0ZiBPXRYAP6UnkFREwdkub6ktho8pkLyFv1EZNBZ4u6EfoBMtO6gcA8IN34iTFMtbgMje2NsY3Xb2RgKg7e1d002uH8ouJy"
@@ -135,8 +135,8 @@ const Rating = ({ info }) => {
   const handleSubmit = () => {
     if (selectedValue && reviewText) {
       const newReview = {
-        userId: auth.currentUser.uid,
-        userName: auth.currentUser.displayName,
+        userId: info.userId,
+        userName: info.userName,
         therapistId: info.id,
         rating: selectedValue,
         comment: reviewText,
@@ -160,6 +160,8 @@ const Rating = ({ info }) => {
           reviewsCount: info.reviewsCount + 1,
         }),
       });
+
+      window.location.reload();    
     }
   };
 
@@ -211,6 +213,18 @@ const TherapistProfile = () => {
   const [therapist, setTherapist] = useState({});
   const [reviews, setReviews] = useState([]);
 
+  const [user, setUser] = useState(null);
+  const auth = getAuth();
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
+
   const { id } = useParams();
 
   // 2 api calls to get the therapist and the reviews
@@ -223,7 +237,7 @@ const TherapistProfile = () => {
       .then((response) => response.json())
       .then((data) => {
         const filteredReviews = data.filter(
-          (review) => review.therapistId === id
+          (review) => review.therapistId === parseInt(id)
         );
         setReviews(filteredReviews);
       });
@@ -234,7 +248,10 @@ const TherapistProfile = () => {
       <div className="card">
         <div className="card-body">
           <img
-            src="https://placehold.co/150/orange/white?text=J"
+            src={
+              "https://placehold.co/150/orange/white?text=" +
+              therapist.name?.slice(3, 5)
+            }
             alt={therapist.name}
             className="rounded-circle mx-auto d-block mb-3"
           />
@@ -264,7 +281,7 @@ const TherapistProfile = () => {
             }}
           />
 
-          {/* {auth.currentUser ? (
+          {user ? (
             <Elements stripe={stripePromise}>
               <DateTimePickerWithStripe
                 availability={therapist.availability}
@@ -278,28 +295,19 @@ const TherapistProfile = () => {
                 Login to book an appointment
               </Link>
             </p>
-          )} */}
-
-          <Elements stripe={stripePromise}>
-            <DateTimePickerWithStripe
-              availability={therapist.availability}
-              userId={id}
-              therapistId={therapist.id}
-            />
-          </Elements>
+          )}
 
           <Reviews
             info={{
-              name: therapist.name,
               reviews: reviews,
             }}
           />
 
-          {auth.currentUser ? (
+          {user ? (
             <Rating
               info={{
                 userId: 1,
-                userName: "John Doe",
+                userName: "abdeelrhman zeid",
                 id: therapist.id,
                 name: therapist.name,
                 rating: therapist.rating,

@@ -1,9 +1,20 @@
-import React, { useEffect, useState } from "react";
 import { Hospital } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
-import { auth } from "./config";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import React, { useState, useEffect } from "react";
 
 export default function Header() {
+  const [user, setUser] = useState(null);
+  const auth = getAuth();
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
   return (
     // TODO: Replace hrefs with routing Links
     // TODO: If user is not logged in, show login and register buttons
@@ -20,7 +31,7 @@ export default function Header() {
             </Link>
           </a>
 
-          {auth.currentUser ? (
+          {user ? (
             <div className="dropdown text-end">
               <a
                 href="#"
@@ -29,7 +40,7 @@ export default function Header() {
                 aria-expanded="false"
               >
                 <img
-                  src={auth.currentUser.photoURL}
+                  src={user.photoURL}
                   alt="avatar"
                   width="32"
                   height="32"
@@ -51,9 +62,11 @@ export default function Header() {
                   <Link to="/appointments" className="dropdown-item">
                     Appointments
                   </Link>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
                   <Link to="/logout" className="dropdown-item">
                     Logout
                   </Link>

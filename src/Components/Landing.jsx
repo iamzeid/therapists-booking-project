@@ -1,8 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { auth } from "./config";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import React, { useEffect, useState } from "react";
 
 export default function Landing() {
+  const [user, setUser] = useState(null);
+  const auth = getAuth();
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
   return (
     <div>
       {/* section1.............. */}
@@ -22,7 +34,7 @@ export default function Landing() {
               book an appointment
             </Link> */}
             {
-              auth.currentUser ? (
+              user ? (
                 <Link
                   type="button"
                   className="btn btn-success p-2 text-capitalize rounded-2"

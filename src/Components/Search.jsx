@@ -59,9 +59,7 @@ const TherapistSearch = () => {
         (therapist.location.city.toLowerCase() ===
           searchCriteria.city.toLowerCase() ||
           searchCriteria.city === "") &&
-        (therapist.price.some(
-          (option) => option.amount <= parseFloat(searchCriteria.price)
-        ) ||
+        (therapist.price <= parseFloat(searchCriteria.price) ||
           searchCriteria.price === "")
       );
     });

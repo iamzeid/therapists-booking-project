@@ -86,8 +86,8 @@
         "Anxiety",
         "Stress"
       ],
-      "rating": 4.99375,
-      "reviewsCount": 8,
+      "rating": 4.87421875,
+      "reviewsCount": 11,
       "appointments": [
         1
       ]
@@ -126,8 +126,8 @@
         "Anxiety Disorders",
         "Psychotic Disorders"
       ],
-      "rating": 4.75,
-      "reviewsCount": 2,
+      "rating": 4.96875,
+      "reviewsCount": 5,
       "appointments": [
         2,
         3
@@ -474,6 +474,7 @@
     {
       "id": 1,
       "userId": 1,
+      "userName": "abdelrahman zeid",
       "therapistId": 1,
       "rating": 5,
       "comment": "Dr. John Doe is an excellent psychologist. He helped me overcome my depression and anxiety."
@@ -481,6 +482,7 @@
     {
       "id": 2,
       "userId": 1,
+      "userName": "John Doe",
       "therapistId": 2,
       "rating": 4,
       "comment": "Dr. Jane Smith is a knowledgeable psychiatrist. She provided me with valuable insights into my mental health."
@@ -488,6 +490,7 @@
     {
       "id": 3,
       "userId": 2,
+      "userName": "Jane Smith",
       "therapistId": 2,
       "rating": 5,
       "comment": "Dr. Jane Smith is a compassionate psychiatrist. She listened to my concerns and offered practical solutions."
@@ -495,6 +498,7 @@
     {
       "id": 4,
       "userId": 2,
+      "userName": "Michael Johnson",
       "therapistId": 3,
       "rating": 4,
       "comment": "Dr. Michael Johnson is a caring psychotherapist. He helped me process my trauma and addiction."
@@ -514,6 +518,39 @@
       "rating": "5",
       "comment": "zdghjfgkjghkhjk",
       "id": 6
+    },
+    {
+      "therapistId": 1,
+      "userName": "abdelrahman zeid",
+      "rating": "4",
+      "comment": "fhsfhdsfgjdg",
+      "id": 7
+    },
+    {
+      "therapistId": 2,
+      "rating": "5",
+      "comment": "fsdghdsfhgjh",
+      "id": 8
+    },
+    {
+      "therapistId": 2,
+      "rating": "5",
+      "comment": "dfhsdfhjsdfh",
+      "id": 9
+    },
+    {
+      "therapistId": 2,
+      "rating": "5",
+      "comment": "fefshsdfhsdfhf",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "userName": "abdeelrhman zeid",
+      "therapistId": 1,
+      "rating": "5",
+      "comment": "Thanks",
+      "id": 11
     }
   ]
 }
